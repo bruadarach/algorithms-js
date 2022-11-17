@@ -11,14 +11,20 @@ function solution(n, k) {
   // 1. 양꼬치 주문이 10인분 미만이라면 정가 계산.
   // 2. 양꼬치 주문이 10인분 이상인 경우, 10으로 나눈 값 만큼 drink 갯수 빼고 계산.
 
-  // Solution 1
-  //   return n < 10 ? lamb * n + drink * k : lamb * n + drink * (k - Math.floor(n / 10));
+  /* Math.floor vs. parseInt vs. ~~ */
 
-  // Solution 2
+  // Solution 1 : Math.floor() 사용
+  //   return n < 10 ? lamb * n + drink * k : lamb * n + drink * (k - Math.floor(n / 10));
+  //   return lamb * n + drink * (k - Math.floor(n / 10));
+
+  // Solution 2 : parseInt
+  //   return lamb * n + drink * (k - parseInt(n / 10));
+
+  // Solution 3
   // ~~ : Bitwise NOT => 비트 연산자를 Math.floor 대신 사용
   return lamb * n + drink * (k - ~~(n / 10));
 }
 
 console.log(solution(5, 1)); // 62000
-console.log(solution(10, 3));
-console.log(solution(64, 6));
+console.log(solution(10, 3)); // 124000
+console.log(solution(64, 6)); // 768000
