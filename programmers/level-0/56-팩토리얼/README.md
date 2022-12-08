@@ -34,3 +34,32 @@ i팩토리얼 (i!)은 1부터 i까지 정수의 곱을 의미합니다. 예를�
 ### 입출력 예 #2
 
 > 3! = 6, 4! = 24입니다. n이 7이므로, 7 이하의 최대 팩토리얼인 3을 return 합니다.
+
+<br>
+
+## 노트
+
+팩토리얼 (반복문)
+
+```js
+function factorial(num) {
+  let result = 1;
+  for (n = 1; n <= num; n++) {
+    result *= n;
+  }
+  return result;
+}
+```
+
+<br>
+
+팩토리얼 (재귀)
+
+```js
+function factorial(num) {
+  if (num <= 1) {
+    return 1;
+  }
+  return num * factorial(num - 1);
+}
+```
