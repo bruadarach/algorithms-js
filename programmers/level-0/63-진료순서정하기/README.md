@@ -64,7 +64,7 @@ The sort() method sorts the elements of an array `in place` and returns the refe
 
 <br>
 
-### 배열 복사 방법 (얕은 복사)
+### 얕은 복사 방법 : 배열
 
 : 단, 1 레벨(1차원 배열)에 대해서는 깊은 복사가 허용되나 2 레벨(2차원 배열)이상 부터는 깊은 복사가 되지 않습니다.
 
@@ -83,7 +83,7 @@ The sort() method sorts the elements of an array `in place` and returns the refe
 
 <br>
 
-### 객체 복사 방법 (얕은 복사)
+### 얕은 복사 방법 : 객체
 
 : 배열과 마찬가지로 1 레벨은 깊은 복사가 허용되나 2 레벨 부터는 깊은 복사가 되지 않습니다.
 
