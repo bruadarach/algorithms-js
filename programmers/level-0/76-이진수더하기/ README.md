@@ -35,3 +35,23 @@
 ### 입출력 예 #2
 
 > 1001 + 1111 = 11000 이므로 "11000"을 return합니다.
+
+<br>
+
+## Note
+
+- 2진수 → 10진수: `parseInt()` 사용
+
+```js
+const str = "10";
+console.log(parseInt(str)); //10 (str을 정수로)
+console.log(parseInt(str, 2)); //2 (2진수인 str을 10진수로)
+```
+
+- 10진수 → 2진수: `toString()` 사용
+
+```js
+const num = 10;
+console.log(num.toString()); //"10" (num을 문자열로)
+console.log(num.toString(2)); //"1010" (num을 2진수로)
+```
