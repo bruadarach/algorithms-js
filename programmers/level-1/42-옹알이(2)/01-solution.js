@@ -1,12 +1,13 @@
 function solution(babbling) {
-  const possible = ["aya", "ye", "woo", "ma"];
-  for (let i = 0; i < babbling.length; i++) {
-    for (let j = 0; j < possible.length; j++) {
-      babbling[i] = babbling[i].replace(possible[j], "1");
-    }
+  const single = /(aya|ye|woo|ma)/g;
+  const double = /(ayaaya|yeye|woowoo|mama)/g;
+  let result = 0;
+
+  for (let word of babbling) {
+    word = word.replaceAll(double, "1").replaceAll(single, "");
+    word.length === 0 ? result++ : result;
   }
-  console.log(babbling);
-  return babbling.filter((el) => el.replaceAll("1", "").length === 0).length;
+  return result;
 }
 console.log(solution(["aya", "yee", "u", "maa"])); // 1
 console.log(solution(["ayaye", "uuu", "yeye", "yemawoo", "ayaayaa"])); // 2
