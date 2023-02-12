@@ -25,25 +25,32 @@
 예를 들어, new_id 값이 "...!@BaT#\*..y.abcdefghijklm" 라면, 위 7단계를 거치고 나면 new_id는 아래와 같이 변경됩니다.
 
 > 1단계 대문자 'B'와 'T'가 소문자 'b'와 't'로 바뀌었습니다.
-> "...!@BaT#_..y.abcdefghijklm" → "...!@bat#_..y.abcdefghijklm"
 
-> 2단계 '!', '@', '#', '_' 문자가 제거되었습니다.
-> "...!@bat#_..y.abcdefghijklm" → "...bat..y.abcdefghijklm"
+"...!@BaT#_..y.abcdefghijklm" → "...!@bat#_..y.abcdefghijklm"
+
+> 2단계 '!', '@', '#', '\_' 문자가 제거되었습니다.
+
+"...!@bat#\_..y.abcdefghijklm" → "...bat..y.abcdefghijklm"
 
 > 3단계 '...'와 '..' 가 '.'로 바뀌었습니다.
-> "...bat..y.abcdefghijklm" → ".bat.y.abcdefghijklm"
+
+"...bat..y.abcdefghijklm" → ".bat.y.abcdefghijklm"
 
 > 4단계 아이디의 처음에 위치한 '.'가 제거되었습니다.
-> ".bat.y.abcdefghijklm" → "bat.y.abcdefghijklm"
+
+".bat.y.abcdefghijklm" → "bat.y.abcdefghijklm"
 
 > 5단계 아이디가 빈 문자열이 아니므로 변화가 없습니다.
-> "bat.y.abcdefghijklm" → "bat.y.abcdefghijklm"
+
+"bat.y.abcdefghijklm" → "bat.y.abcdefghijklm"
 
 > 6단계 아이디의 길이가 16자 이상이므로, 처음 15자를 제외한 나머지 문자들이 제거되었습니다.
-> "bat.y.abcdefghijklm" → "bat.y.abcdefghi"
+
+"bat.y.abcdefghijklm" → "bat.y.abcdefghi"
 
 > 7단계 아이디의 길이가 2자 이하가 아니므로 변화가 없습니다.
-> "bat.y.abcdefghi" → "bat.y.abcdefghi"
+
+"bat.y.abcdefghi" → "bat.y.abcdefghi"
 
 <br>
 
