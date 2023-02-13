@@ -206,3 +206,16 @@ new_id에 나타날 수 있는 특수문자는 -*.~!@#$%^&\*()=+[{]}:?,<>/ 로 �
 - 공백 문자열
   - `\s` : space. 공백임
   - `\S` : space. 공백이 아님
+
+<br>
+
+### Cf.) String.prototype.`padEnd()`
+
+padEnd() 메서드는 현재 문자열에 다른 문자열을 채워, 주어진 길이를 만족하는 새로운 문자열을 반환합니다. 채워넣기는 대상 문자열의 끝(우측)부터 적용됩니다.
+
+```js
+"abc".padEnd(10); // "abc       "
+"abc".padEnd(10, "foo"); // "abcfoofoof"
+"abc".padEnd(6, "123456"); // "abc123"
+"abc".padEnd(1); // "abc"
+```
