@@ -142,6 +142,8 @@ new_id에 나타날 수 있는 특수문자는 -*.~!@#$%^&\*()=+[{]}:?,<>/ 로 �
 
 ## 정규표현식 해설
 
+A regular expression is a way to search through a string text.
+
 ```js
 .replace(/[^\w\.\-]/g, "") // 2단계 newid에서 알파벳 소문자, 숫자, 빼기(-), 밑줄(), 마침표(.)를 제외한 모든 문자를 제거합니다.
     .replace(/\.{2,}/g, ".") // 3단계 new_id에서 마침표(.)가 2번 이상 연속된 부분을 하나의 마침표(.)로 치환합니다.
