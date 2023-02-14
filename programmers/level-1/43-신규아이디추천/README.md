@@ -171,6 +171,8 @@ A regular expression is a way to search through a string text.
 - (대상 문자열 내) 모든 패턴 검색
 
   - `g` : global
+  - `m` : multiline
+  - `i` : case-insensitive
 
 <br>
 
