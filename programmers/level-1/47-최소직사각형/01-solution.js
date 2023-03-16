@@ -1,3 +1,5 @@
+// The fastest solution
+
 function solution(sizes) {
   let width = 0;
   let height = 0;
