@@ -13,7 +13,7 @@
 ## Big-O Analysis
 
 - Time Complexity
-  - Best case : O(n)
+  - Best case : `O(n)`
   - Worst case : `O(n^2)`
 - Space Complexity: `O(1)`
   - The algorithm only requires auxiliary variables for flags, temporary variables and thus the space complexity is O(1).
