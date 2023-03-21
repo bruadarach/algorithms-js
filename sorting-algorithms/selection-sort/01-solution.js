@@ -20,6 +20,6 @@ function selectionSort(arr) {
   return arr;
 }
 
-arr = [5, 3, 4, 1, 2];
+const arr = [5, 3, 4, 1, 2];
 selectionSort(arr); // [1, 2, 3, 4, 5]
 console.log(arr);
