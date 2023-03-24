@@ -16,5 +16,5 @@
 - Time Complexity
   - Best case : `O(n)`
   - Worst case : `O(n^2)`
-- Space Complexity: `O(1)`
+- Space Complexity: `O(n)`
   - The algorithm only requires auxiliary variables for flags, temporary variables and thus the space complexity is O(1).
