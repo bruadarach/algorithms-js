@@ -1,5 +1,3 @@
-// the faster solution
-
 function solution(s) {
   const set = new Set();
   const arr = s
