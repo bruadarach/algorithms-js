@@ -1,35 +1,26 @@
 function solution(id_list, report, k) {
-  let answer = [];
-  let reportCount = {};
   let reportList = {};
-  let reportResult = {};
+  let countReport = {};
 
-  for (let id of id_list) {
-    reportCount[id] = 0;
+  for (id of id_list) {
     reportList[id] = [];
-    reportResult[id] = 0;
+    countReport[id] = 0;
   }
 
   for (let r of report) {
     let [id, reportedId] = r.split(" ");
-    if (!reportList[reportedId].includes(id)) {
-      reportList[reportedId].push(id);
-      reportCount[reportedId]++;
+    if (!reportList[id].includes(reportedId)) {
+      reportList[id].push(reportedId);
+      countReport[reportedId]++;
     }
   }
 
+  let answer = [];
   for (let id of id_list) {
-    if (reportCount[id] >= k) {
-      for (let reporter of reportList[id]) {
-        reportResult[reporter]++;
-      }
-    }
+    answer.push(
+      reportList[id].filter((reportedId) => countReport[reportedId] >= k).length
+    );
   }
-
-  for (let id of id_list) {
-    answer.push(reportResult[id]);
-  }
-
   return answer;
 }
 
