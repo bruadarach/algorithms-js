@@ -1,3 +1,6 @@
+// use the last element as the pivot
+// in-place
+
 function quickSort(arr, left = 0, right = arr.length - 1) {
   if (left < right) {
     const pivot = partition(arr, left, right);
@@ -27,5 +30,5 @@ function swap(arr, i, j) {
 }
 
 const arr = [5, 3, 4, 1, 2];
-quickSort(arr);
-console.log(arr); // [-6, -2, 4, 8, 20]
+console.log(quickSort(arr)); // [1, 2, 3, 4, 5]
+console.log(arr); //
