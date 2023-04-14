@@ -19,7 +19,6 @@ function merge(leftArr, rightArr) {
       sortedArr.push(rightArr.shift());
     }
   }
-  //   return sortedArr.concat(leftArr, rightArr);
   return [...sortedArr, ...leftArr, ...rightArr];
 }
 
