@@ -1,4 +1,4 @@
-// Big-O = O(n)
+// Big-O : O(n)
 
 function fibonacci(n) {
   const fib = [0, 1];
