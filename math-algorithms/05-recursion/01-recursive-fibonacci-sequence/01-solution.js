@@ -1,3 +1,7 @@
+// Big-O for Iterative : O(n)
+// Big-O for Recursive : O(2^n), 2 power n
+// So, recursive is not a good solution for the fibonacci sequence problem.
+
 function recursiveFibonacci(n) {
   if (n <= 1) {
     return n;

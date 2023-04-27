@@ -36,6 +36,8 @@ F2 = 1
 - Figure out how to break down the problem into smaller versions of the same problem.
 - Identify the base case for recursion.
 
-```
+## Big O
 
-```
+- Time Complexity: O(1) for Iterative : O(n)
+- Time Complexity: O(1) for Recursive : O(2^n), 2 power n
+- So, recursive is not a good solution for the fibonacci sequence problem.
