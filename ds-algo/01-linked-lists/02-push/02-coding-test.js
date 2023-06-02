@@ -61,16 +61,20 @@ class LinkedList {
   }
 }
 
-let myLinkedList = new LinkedList(1);
-myLinkedList.makeEmpty();
-myLinkedList.push(1);
-myLinkedList.push(2);
+function test() {
+  let myLinkedList = new LinkedList(1);
+  myLinkedList.makeEmpty();
+  myLinkedList.push(1);
+  myLinkedList.push(2);
 
-myLinkedList.getHead();
-myLinkedList.getTail();
-myLinkedList.getLength();
-console.log("\nLinked List:");
-myLinkedList.printList();
+  myLinkedList.getHead();
+  myLinkedList.getTail();
+  myLinkedList.getLength();
+  console.log("\nLinked List:");
+  myLinkedList.printList();
+}
+
+test();
 
 /*
     EXPECTED OUTPUT:
