@@ -167,3 +167,11 @@ console.log(myLinkedList);
 //     tail: Node { value: 3, next: null },
 //     length: 4
 //   }
+
+myLinkedList.shift();
+console.log(myLinkedList);
+// LinkedList {
+//   head: Node { value: 1, next: Node { value: 2, next: [Node] } },
+//   tail: Node { value: 3, next: null },
+//   length: 3
+// }
