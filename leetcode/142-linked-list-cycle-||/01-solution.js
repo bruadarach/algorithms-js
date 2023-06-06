@@ -27,3 +27,5 @@ var detectCycle = function (head) {
   }
   return null;
 };
+
+// time complexity: O(n)
