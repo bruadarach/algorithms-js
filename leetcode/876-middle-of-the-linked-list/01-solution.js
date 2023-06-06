@@ -18,3 +18,5 @@ var middleNode = function (head) {
   }
   return slow;
 };
+
+// time complexity: O(n)
