@@ -1,3 +1,5 @@
+// there is no case that n is out of range
+
 /**
  * Definition for singly-linked list.
  * function ListNode(val, next) {
