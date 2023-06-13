@@ -103,7 +103,7 @@ class LinkedList {
     // length is 0, but this is not an empty LinkedList.
     // (still there is one item left, after following the scenario 2 codes)
     if (this.length === 0) {
-      this.head = null;
+      // this.head = null;
       this.tail = null;
     }
     return temp;
