@@ -12,7 +12,7 @@ class Stack {
     this.length = 1;
   }
 
-  // unshift
+  // unshift()
   push(value) {
     const newNode = new Node(value);
 
