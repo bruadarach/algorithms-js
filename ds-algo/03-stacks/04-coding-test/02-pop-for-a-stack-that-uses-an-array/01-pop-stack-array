@@ -1,0 +1,55 @@
+class Stack {
+  constructor() {
+    this.stackList = [];
+  }
+
+  getStackList() {
+    return this.stackList;
+  }
+
+  printStack() {
+    for (let i = this.stackList.length - 1; i >= 0; i--) {
+      console.log(this.stackList[i]);
+    }
+  }
+
+  isEmpty() {
+    return this.stackList.length === 0;
+  }
+
+  peek() {
+    if (this.isEmpty()) {
+      return null;
+    } else {
+      return this.stackList[this.stackList.length - 1];
+    }
+  }
+
+  size() {
+    return this.stackList.length;
+  }
+
+  push(value) {
+    this.stackList.push(value);
+  }
+
+  pop() {
+    // If the stack is empty, return null
+    if (this.isEmpty()) return null;
+
+    // Otherwise, remove and return the top element of the stack
+    return this.stackList.pop();
+  }
+}
+
+const stack = new Stack();
+stack.push(1);
+stack.push(2);
+stack.push(3);
+
+console.log(stack.pop()); // 3
+console.log(stack.pop()); // 2
+console.log(stack.pop()); // 1
+console.log(stack.pop()); // null
+
+// time complexity: O(1)
