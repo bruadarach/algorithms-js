@@ -56,6 +56,13 @@ class BST {
     }
     return false;
   }
+
+  minValueNode(currentNode) {
+    while (currentNode.left !== null) {
+      currentNode = currentNode.left;
+    }
+    return currentNode;
+  }
 }
 
 let myTree = new BST();
@@ -65,11 +72,14 @@ myTree.insert(9);
 myTree.insert(2);
 myTree.insert(8);
 
-console.log(myTree.contains(8)); // true
-console.log(myTree.contains(100)); // false
+console.log(myTree.minValueNode(myTree.root));
+// Node {
+//   value: 1,
+//   left: null,
+//   right: Node { value: 2, left: null, right: null }
+// }
 
-let myTree2 = new BST();
-console.log(myTree2.contains(0)); // false
+console.log(myTree.minValueNode(myTree.root.right));
+// Node { value: 8, left: null, right: null }
 
-// time complexity: O(log n) - best and average case
-// time complexity: O(n) - worst case
+// time complexity: O(log n)
