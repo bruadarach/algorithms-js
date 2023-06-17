@@ -67,5 +67,5 @@ console.log(myTree);
 //   }
 
 // time complexity:
-// - Average : tree is balanced : O(log n)
+// - Average : tree is balanced : Θ(log n)
 // - Worst : tree is unbalanced : O(n)
