@@ -43,3 +43,6 @@ console.log(myHashTable);
 // HashTable {
 //     dataMap: [ <4 empty items>, [ [Array] ], [ [Array] ], <1 empty item> ]
 //   }
+
+// time complexity : O(1)
+// time complexity : O(n) if there are collisions
