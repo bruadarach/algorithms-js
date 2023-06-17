@@ -65,3 +65,7 @@ console.log(myTree);
 //       right: Node { value: 9, left: [Node], right: [Node] }
 //     }
 //   }
+
+// time complexity:
+// - Average : tree is balanced : O(log n)
+// - Worst : tree is unbalanced : O(n)
